@@ -1,0 +1,54 @@
+﻿*{margin: 0;padding: 0;}
+body{font-family:微软雅黑;background: #fff; font-size:1em;color:#666;margin: 0;padding: 0; background:#eee;}
+li{list-style: none;}
+a{text-decoration: none;}
+h2,h3{
+	font-weight: normal;
+}
+i,em{
+	font-style: normal;
+}
+img{ border:none; padding:0; margin:0;}
+.fl{float:left;}
+.fr{float:right;}
+.cl{ clear:both;}
+.clearfix{
+	clear: both;
+	display: block;
+	overflow: hidden;
+}
+.wrapper02{font-family:微软雅黑;
+	margin: 0 auto;
+	width: 640px;
+	margin-bottom:15px; padding-bottom:90px; background:#eeeeee;
+}
+
+.header{ width:100%; height:70px; padding-bottom:10px;}
+.header p{ width:96%; position:relative;top:20px; margin:0 auto;}
+.fenl { width:100%; position:relative;margin:0 auto;}
+.fenl ul li{ height:60px; border-bottom:1px solid #eeeeee; background:#fff; line-height:60px; font-size:1em;}
+.fenl ul li span.gss{ margin-left:20px; font-size:1em;display:block;float:left;}
+.fenl ul li span.jg{ display:block;float:right; margin-right:20px; border:1px solid #eee; width:100px; text-align:center; height:30px; line-height:30px; margin-top:15px;border-radius:5px;}
+a.faq{ display:block; width:95%; margin:0 auto; height:50px; background:#139f13; margin-top:30px;border-radius:5px; text-align:center; line-height:50px; color:#fff; font-size:1.3em;}
+.shum{ width:95%; margin:0 auto; margin-top:40px; font-size:14px; position:relative;}
+.shum p{ font-size:14px !important; line-height:25px;}
+.shum p.bp{ width:50%; font-size:14px !important;}
+.weix{ width:50%; position:absolute; right:0; bottom:0; text-align:center; top:50px;}
+.weix img{ width:50%;}
+.fenl select{ width:96%; margin:0 auto; margin-left:2%; height:40px;border-radius:5px;}
+.fenl textarea{ width:96%; margin:0 auto; margin-left:2%; height:80px; margin-top:20px;border-radius:5px;}
+.tix{width:96%; margin:0 auto; background:#fff; height:50px; margin-top:20px;}
+.tix p{ color:#C30; line-height:50px; margin-left:30px;}
+.tix2{width:96%; margin:0 auto; background:#fff; height:50px; margin-top:20px;}
+.tix2 p{ color:#999; line-height:50px; margin-left:30px; float:left;}
+.tix2 input{ border:none; height:50px; width:70%; float:right;}
+
+.sousuo{ width:95%; margin:0 auto; margin-top:20px;}
+.sousuo input{ width:85%; height:40px; border:none;border-radius:5px 0 0 5px;}
+.sousuo button{ width:10%; height:40px; border:none; background:#79b546; color:#fff;border-radius:0 5px 5px 0;}
+.zb_list{ width:100%; height:90px; background:#fff; border-bottom:1px solid #ccc; margin-top:30px; position:relative;}
+.zb_list span{ margin-top:25px;}
+.zb_list span strong{ font-weight:100; color:#000;}
+.zb_list span.zbsj{ display:block; float:left; margin-left:20px;}
+.zb_list span.wr{ display:block; float:right; right:0px; margin-right:40px;}
+.zb_list img{ display:block; position:absolute; right:10px;top:30px; width:15px;}

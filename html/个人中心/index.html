@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<title>个人中心</title>
+    <meta name="keywords" content="个人中心"/>
+    <meta name="description" content="个人中心"/>
+
+	<link rel="stylesheet" href="css/style01.css">
+    <script>
+
+var phoneWidth = parseInt(window.screen.width);
+var phoneHeight = parseInt(window.screen.height);
+var phoneScale = phoneWidth/640;
+
+var ua = navigator.userAgent;
+if (/Android (\d+\.\d+)/.test(ua)){
+	var version = parseFloat(RegExp.$1);
+	// andriod 2.3
+	if(version>2.3){
+		document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+	// andriod 2.3以上
+	}else{
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+	}
+	// 其他系统
+} else {
+	document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}
+
+</script>
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="banner">
+			<img src="images/banner1.jpg" >
+            <div class="header">
+               <div class="tx-box">
+                 <img src="images/tx.png">
+               </div>
+               <strong>DM</strong>
+            </div>
+		</div>
+		<div class="maincont">
+			<div class="zhxx">
+              <div class="yexx fl">
+                <img src="images/01.jpg" width="45">
+                <p><span>0.00</span><br>当前账号</p>
+              </div>
+              <div class="czxx fr">
+                <button class="cz">充值</button>
+                <button class="tx">体现</button>
+              </div>
+            </div>
+			<div class="zhxx">
+              <div class="yexx fl">
+                <img src="images/01.jpg" width="45">
+                <p><span>0.00</span><br>总收入</p>
+              </div>
+              <div id="hb" class="czxx fr">
+                <button class="cz">红包课收入/0.00</button>
+                <button class="tx">付费课收入/0.00</button>
+              </div>
+            </div>
+            <div class="zhxx">
+              <div class="yexx fl">
+                <img src="images/01.jpg" width="45">
+                <p style="font-size:24px; line-height:45px; color:#666;">微商日志</p>
+              </div>
+              <div id="rz"  class="czxx fr">
+                <a href="html/class_date.html"><button class="cz">听课日志<img src="images/jt.png" /></button></a>
+                <a href=""><button class="tx">资金日志<img src="images/jt.png" /></button></a>
+              </div>
+            </div>	
+		</div>
+		
+	</div>
+<div class="footer">
+  <ul>
+    <li><a href="index/html"><img src="images/tu01.png" width="30"><br>个人中心</a></li>
+    <li><a href="html/mclass.html"><img src="images/tu02.png" width="30"><br>我的课程</a></li>
+    <li><a href="html/mscai.html"><img src="images/tu03.png" width="30"><br>团队素材</a></li>
+    <li><a href="html/xjadmin.html"><img src="images/tu04.png" width="30"><br>下级管理</a></li>
+  </ul>
+</div>
+
+</body>
+</html>

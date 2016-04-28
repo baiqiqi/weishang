@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<title>下级管理</title>
+    <meta name="keywords" content="下级管理"/>
+    <meta name="description" content="下级管理"/>
+    <link rel="stylesheet" href="../css/style01.css">
+    <script src="../js/jquery.1.7.2.min.js"></script>
+    <script src="../js/mobiscroll_002.js" type="text/javascript"></script>
+	<script src="../js/mobiscroll_004.js" type="text/javascript"></script>
+	<link href="../css/mobiscroll_002.css" rel="stylesheet" type="text/css">
+	<link href="../css/mobiscroll.css" rel="stylesheet" type="text/css">
+	<script src="../js/mobiscroll.js" type="text/javascript"></script>
+	<script src="../js/mobiscroll_003.js" type="text/javascript"></script>
+	<script src="../js/mobiscroll_005.js" type="text/javascript"></script>
+	<link href="../css/mobiscroll_003.css" rel="stylesheet" type="text/css">
+    <script>
+
+var phoneWidth = parseInt(window.screen.width);
+var phoneHeight = parseInt(window.screen.height);
+var phoneScale = phoneWidth/640;
+
+var ua = navigator.userAgent;
+if (/Android (\d+\.\d+)/.test(ua)){
+	var version = parseFloat(RegExp.$1);
+	// andriod 2.3
+	if(version>2.3){
+		document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+	// andriod 2.3以上
+	}else{
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+	}
+	// 其他系统
+} else {
+	document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}
+
+</script>
+
+</head>
+<body>
+<div class="wrapper" style="padding-bottom:200px;">
+  <div class="lz_headd" style="background:#ff6766">
+          <a href="#" style="color:#fff;"><img src="../images/jiant.png" width="10px;"><span>返回</span></a>
+          <div id="lzwc" class="lwf fr">提交</div>
+        </div>
+        <div>
+          <textarea style="width:96%; border:none; height:80px; padding:2%;">请输入文字...</textarea>
+          <a href="#"><img src="../images/jtu.png" width="90;"></a>
+        </div>
+        <div class="kongge">
+        <div><a href="#">上传文件<span>点击上传文件</span></a></div>
+        <div><a>谁可以看<span><select id="s1_text1_bold">
+                                    <option value="0" selected="">公开</option>
+                                    <option value="1">公开（所有人可见）</option>
+                                    <option value="2">下级代理（金下级代理可见）</option>
+                                    <option value="3">上级可见（所以上级代理可见）</option>
+                                   
+                                </select></span></a></div>
+         <div><a>自动同步下级代理<span><div class="labelWrap">
+		  <label for="onOff" id="sliderLabel">
+		    <input type="checkbox" id="onOff" />
+		    <span id="slider">
+		      <span id="sliderOn">ON</span>
+		      <span id="sliderOff">OFF</span>
+		      <span id="slideBlock"></span>	
+		    </span>
+		  </label>
+		  
+		</div></span></a></div>
+         <div><a>添加标签<span><input value="点击输入标签，限7个字，10个标签"></span></a></div>
+        </div>
+        <div class="biaoqian">
+           <ul>
+             <li><a>顾客反馈+</a></li>
+             <li><a>团队风采+</a></li>
+             <li><a>交易截图+</a></li>
+             <li><a>成交语录+</a></li>
+             <li><a>活动展示+</a></li>
+           </ul>
+        </div>
+        
+</div>
+<div class="footer">
+  <ul>
+    <li><a href="../index.html"><img src="../images/tu01.png" width="30"><br>个人中心</a></li>
+    <li><a href="mclass.html"><img src="../images/tu02.png" width="30"><br>我的课程</a></li>
+    <li><a href="mscai.html"><img src="../images/tu03.png" width="30"><br>团队素材</a></li>
+    <li><a href="xjadmin.html"><img src="../images/tu04.png" width="30"><br>下级管理</a></li>
+  </ul>
+</div>
+
+</body>
+</html>

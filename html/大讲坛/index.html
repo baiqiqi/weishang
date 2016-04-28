@@ -1,0 +1,450 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<title>大讲坛</title>
+    <meta name="keywords" content="大讲坛"/>
+    <meta name="description" content="大讲坛"/>
+    <link rel="stylesheet" href="css/style01.css">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <!--必要样式-->
+    <link rel="stylesheet" href="css/pullToRefresh.css" type="text/css" />
+    <script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/pullToRefresh.mini.js"></script>
+    <script>
+
+var phoneWidth = parseInt(window.screen.width);
+var phoneHeight = parseInt(window.screen.height);
+var phoneScale = phoneWidth/640;
+
+var ua = navigator.userAgent;
+if (/Android (\d+\.\d+)/.test(ua)){
+	var version = parseFloat(RegExp.$1);
+	// andriod 2.3
+	if(version>2.3){
+		document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+	// andriod 2.3以上
+	}else{
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+	}
+	// 其他系统
+} else {
+	document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}
+
+</script>
+
+</head>
+<body>
+	<div class="wrapper02">
+    <div id="pageOverlay">
+    <div id="bl_ce"></div>
+  <div id="testDiv" style="width:80%;margin:0 auto; margin-top:20%; background:#fff;opacity:1 !important; position:relative; text-align:left; z-index:999999;border-radius:5px; padding:25px;">
+    排序
+    <hr style=" height:2px; width:100%; border:none; background:#ff6766; margin-top:25px;">
+    <ul>
+      <li id="xz">默认排序</li>
+      <li id="xz2">最近</li>
+      <li id="xz3">评分</li>
+      <li id="xz4">收听数</li>
+    </ul>
+  </div>
+</div>
+
+    <div class="djt_header">
+    <a href="html/classst.html">
+       <div class="toux">
+         <img src="images/tx.png" />
+       </div>
+       <div class="ds_xx">
+         赵晓<br>
+         <p>如何将微商作为一个连接点！两个小时整合一<br>家公司！</p>
+         <span class="sj"><img src="images/sj.jpg" width="20"> 2016/01/06 13:58:49</span>
+         <span class="sj"><img src="images/ej.jpg" width="20"> <strong>3242</strong> 人听过<img src="images/pf.jpg" width="20"> <strong>8.06</strong> 分</span>
+       </div>
+       <div class="day_t"><img src="images/lb.png" width="25px;">每日推荐</div>
+    </div>
+    </a>
+    <div class="sx_nav">
+      <ul>
+        <li style="width:34%;" id="mrpx">默认排序<img src="images/sj02.jpg" width="10px;"></li>
+        <li id="mrfl">默认分类<img src="images/sj02.jpg" width="10px;"></li>
+        <li class="ds_l"><a href="html/maretc.html"><img src="images/lb.jpg" width="20px;">导师列表</a></li>
+      </ul>
+    </div>
+    <div class="sx_nav ds_list">
+      <ul>
+        <li style="width:20%; border-right:1px solid #80d9d8;"><img src="images/tx.jpg" width="17px;">导师</li>
+        <li id="kt" style="width:40%;"><img src="images/kt.jpg" width="17px;">课题</li>
+        <li style="width:39%;" class="hbk" id="hb"><img src="images/hb.jpg" width="15px;">红包课<sup style="font-size:10px;">HOT</sup></li>
+      </ul>
+    </div>
+    <div class="hbk_co" id="hbc">
+    <img src="images/hbk_tx.jpg">
+    </div>
+    <div id="wrapper" style="width:640px;">
+    
+	<ul>
+		<li>
+			<img src="img/game1.png">
+            <div class="dhtx">
+               <div class="tm_bk"></div>
+               <p>迪莉慧</p>
+               <div class="ds_kj" style="">
+                 导师空间
+               </div>
+            </div>
+            <div class="sj_z"><img src="images/ds_01.jpg"></div>
+			<div class="game-info">
+                <h1>华仔天下</h1>
+				<p><img src="images/sj.jpg">3万次下载     147.98M</p>
+				<p><span><img src="images/ej.jpg"><strong>286</strong>人听过</span><span><img src="images/ej.jpg" class="fens"><strong>7.05</strong>分</span></p>
+			</div>
+			
+		</li>
+		<li>
+			<img src="img/game2.png">
+            <div class="dhtx">
+               <div class="tm_bk"></div>
+               <p>迪莉慧</p>
+               <div class="ds_kj" style="">
+                 导师空间
+               </div>
+            </div>
+            <div class="sj_z"><img src="images/ds_01.jpg"></div>
+			<div class="game-info">
+				<h1>有杀气的小华</h1>
+				<p><img src="images/sj.jpg">3万次下载     147.98M</p>
+				<p><span><img src="images/ej.jpg"><strong>286</strong>人听过</span><span><img src="images/ej.jpg" class="fens"><strong>7.05</strong>分</span></p>
+			</div>
+			
+		</li>
+		<li>
+			<img src="img/game3.png">
+            <div class="dhtx">
+               <div class="tm_bk"></div>
+               <p>迪莉慧</p>
+               <div class="ds_kj" style="">
+                 导师空间
+               </div>
+            </div>
+            <div class="sj_z"><img src="images/ds_01.jpg"></div>
+			<div class="game-info">
+				<h1>烈焰小华</h1>
+				<p><img src="images/sj.jpg">3万次下载     147.98M</p>
+				<p><span><img src="images/ej.jpg"><strong>286</strong>人听过</span><span><img src="images/ej.jpg" class="fens"><strong>7.05</strong>分</span></p>
+			</div>
+			
+		</li>
+		<li>
+			<img src="img/game4.png">
+            <div class="dhtx">
+               <div class="tm_bk"></div>
+               <p>迪莉慧</p>
+               <div class="ds_kj" style="">
+                 导师空间
+               </div>
+            </div>
+            <div class="sj_z"><img src="images/ds_01.jpg"></div>
+			<div class="game-info">
+				<h1>灵车飘逸吧</h1>
+				<p><img src="images/sj.jpg">3万次下载     147.98M</p>
+				<p><span><img src="images/ej.jpg"><strong>286</strong>人听过</span><span><img src="images/ej.jpg" class="fens"><strong>7.05</strong>分</span></p>
+			</div>
+			
+		</li>
+		<li>
+			<img src="img/game5.png">
+            <div class="dhtx">
+               <div class="tm_bk"></div>
+               <p>迪莉慧</p>
+               <div class="ds_kj" style="">
+                 导师空间
+               </div>
+            </div>
+            <div class="sj_z"><img src="images/ds_01.jpg"></div>
+			<div class="game-info">
+				<h1>辉仔漏夜上东莞</h1>
+				<p><img src="images/sj.jpg">3万次下载     147.98M</p>
+				<p><span><img src="images/ej.jpg"><strong>286</strong>人听过</span><span><img src="images/ej.jpg" class="fens"><strong>7.05</strong>分</span></p>
+			</div>
+			
+		</li>
+		<li>
+			<img src="img/game6.png">
+            <div class="dhtx">
+               <div class="tm_bk"></div>
+               <p>迪莉慧</p>
+               <div class="ds_kj" style="">
+                 导师空间
+               </div>
+            </div>
+            <div class="sj_z"><img src="images/ds_01.jpg"></div>
+			<div class="game-info">
+				<h1>仙剑客栈20周年版</h1>
+				<p><img src="images/sj.jpg">3万次下载     147.98M</p>
+				<p><span><img src="images/ej.jpg"><strong>286</strong>人听过</span><span><img src="images/ej.jpg" class="fens"><strong>7.05</strong>分</span></p>
+			</div>
+			
+		</li>
+		<li>
+			<img src="img/game7.png">
+            <div class="dhtx">
+               <div class="tm_bk"></div>
+               <p>迪莉慧</p>
+               <div class="ds_kj" style="">
+                 导师空间
+               </div>
+            </div>
+            <div class="sj_z"><img src="images/ds_01.jpg"></div>
+			<div class="game-info">
+				<h1>展哥剑风传奇</h1>
+				<p><img src="images/sj.jpg">3万次下载     147.98M</p>
+				<p><span><img src="images/ej.jpg"><strong>286</strong>人听过</span><span><img src="images/ej.jpg" class="fens"><strong>7.05</strong>分</span></p>
+			</div>
+			
+		</li>
+        <li>
+			<img src="img/game7.png">
+            <div class="dhtx">
+               <div class="tm_bk"></div>
+               <p>迪莉慧</p>
+               <div class="ds_kj" style="">
+                 导师空间
+               </div>
+            </div>
+            <div class="sj_z"><img src="images/ds_01.jpg"></div>
+			<div class="game-info">
+				<h1>展哥剑风传奇</h1>
+				<p><img src="images/sj.jpg">3万次下载     147.98M</p>
+				<p><span><img src="images/ej.jpg"><strong>286</strong>人听过</span><span><img src="images/ej.jpg" class="fens"><strong>7.05</strong>分</span></p>
+			</div>
+			
+		</li>
+        <li>
+			<img src="img/game7.png">
+            <div class="dhtx">
+               <div class="tm_bk"></div>
+               <p>迪莉慧</p>
+               <div class="ds_kj" style="">
+                 导师空间
+               </div>
+            </div>
+            <div class="sj_z"><img src="images/ds_01.jpg"></div>
+			<div class="game-info">
+				<h1>展哥剑风传奇</h1>
+				<p><img src="images/sj.jpg">3万次下载     147.98M</p>
+				<p><span><img src="images/ej.jpg"><strong>286</strong>人听过</span><span><img src="images/ej.jpg" class="fens"><strong>7.05</strong>分</span></p>
+			</div>
+			
+		</li>
+        <li>
+			<img src="img/game7.png">
+            <div class="dhtx">
+               <div class="tm_bk"></div>
+               <p>迪莉慧</p>
+               <div class="ds_kj" style="">
+                 导师空间
+               </div>
+            </div>
+            <div class="sj_z"><img src="images/ds_01.jpg"></div>
+			<div class="game-info">
+				<h1>展哥剑风传奇</h1>
+				<p><img src="images/sj.jpg">3万次下载     147.98M</p>
+				<p><span><img src="images/ej.jpg"><strong>286</strong>人听过</span><span><img src="images/ej.jpg" class="fens"><strong>7.05</strong>分</span></p>
+			</div>
+			
+		</li>
+        <li>
+			<img src="img/game7.png">
+            <div class="dhtx">
+               <div class="tm_bk"></div>
+               <p>迪莉慧</p>
+               <div class="ds_kj" style="">
+                 导师空间
+               </div>
+            </div>
+            <div class="sj_z"><img src="images/ds_01.jpg"></div>
+			<div class="game-info">
+				<h1>展哥剑风传奇</h1>
+				<p><img src="images/sj.jpg">3万次下载     147.98M</p>
+				<p><span><img src="images/ej.jpg"><strong>286</strong>人听过</span><span><img src="images/ej.jpg" class="fens"><strong>7.05</strong>分</span></p>
+			</div>
+			
+		</li>
+        <li>
+			<img src="img/game7.png">
+            <div class="dhtx">
+               <div class="tm_bk"></div>
+               <p>迪莉慧</p>
+               <div class="ds_kj" style="">
+                 导师空间
+               </div>
+            </div>
+            <div class="sj_z"><img src="images/ds_01.jpg"></div>
+			<div class="game-info">
+				<h1>展哥剑风传奇</h1>
+				<p><img src="images/sj.jpg">3万次下载     147.98M</p>
+				<p><span><img src="images/ej.jpg"><strong>286</strong>人听过</span><span><img src="images/ej.jpg" class="fens"><strong>7.05</strong>分</span></p>
+			</div>
+			
+		</li>
+	</ul>
+</div>
+</div>
+
+<script type="text/javascript">
+refresher.init({
+	id:"wrapper",//<------------------------------------------------------------------------------------┐
+	pullDownAction:Refresh,                                                            
+	pullUpAction:Load 																			
+});																																							
+function Refresh() {																
+	setTimeout(function () {	// <-- Simulate network congestion, remove setTimeout from production!
+		var el, li, i;																		
+		el =document.querySelector("#wrapper ul");					
+		//这里写你的刷新代码				
+		document.getElementById("wrapper").querySelector(".pullDownIcon").style.display="none";		
+		document.getElementById("wrapper").querySelector(".pullDownLabel").innerHTML="<img src='css/ok.png'/>刷新成功";																					 
+		setTimeout(function () {
+			wrapper.refresh();
+			document.getElementById("wrapper").querySelector(".pullDownLabel").innerHTML="";								
+			},1000);//模拟qq下拉刷新显示成功效果
+		/****remember to refresh after  action completed！ ---yourId.refresh(); ----| ****/
+	}, 2000);
+}
+function Load() {
+	setTimeout(function () {// <-- Simulate network congestion, remove setTimeout from production!
+		var el, li, i;
+		el =document.querySelector("#wrapper ul");
+		for (i=0; i<5; i++) {
+			li = document.createElement('li');
+			li.innerHTML="<img src='img/game8.png'><div class='dhtx'><div class='tm_bk'></div><p>迪莉慧</p><div class='ds_kj' >导师空间</div></div><div class='sj_z'><img src='images/ds_01.jpg'></div><div class='game-info'><h1>华仔超神战记</h1><p><img src='images/sj.jpg'>3万次下载147.98M</p><p><span><img src='images/ej.jpg'><strong>286</strong>人听过</span><span><img src='images/ej.jpg'><strong>7.05</strong>分</span></p>"
+			el.appendChild(li, el.childNodes[0]);
+		}
+		wrapper.refresh();/****remember to refresh after action completed！！！   ---id.refresh(); --- ****/
+	},3000);	
+}
+</script>
+<script>
+    (function(){
+    // 获取对象
+    var $ = function (id){
+    return document.getElementById(id);
+    };
+    // 遍历
+    var each = function(a, b) {
+    for (var i = 0, len = a.length; i < len; i++) b(a[i], i);
+    };
+    // 事件绑定
+    var bind = function (obj, type, fn) {
+    if (obj.attachEvent) {
+    obj['e' + type + fn] = fn;
+    obj[type + fn] = function(){obj['e' + type + fn](window.event);}
+    obj.attachEvent('on' + type, obj[type + fn]);
+    } else {
+    obj.addEventListener(type, fn, false);
+    };
+    };
+    // 移除事件
+    var unbind = function (obj, type, fn) {
+    if (obj.detachEvent) {
+    try {
+    obj.detachEvent('on' + type, obj[type + fn]);
+    obj[type + fn] = null;
+    } catch(_) {};
+    } else {
+    obj.removeEventListener(type, fn, false);
+    };
+    };
+    // 阻止浏览器默认行为
+    var stopDefault = function(e){
+    e.preventDefault ? e.preventDefault() : e.returnValue = false;
+    };
+    // 获取页面滚动条位置
+    var getPage = function(){
+    var dd = document.documentElement,
+    db = document.body;
+    return {
+    left: Math.max(dd.scrollLeft, db.scrollLeft),
+    top: Math.max(dd.scrollTop, db.scrollTop)
+    };
+    };
+    // 锁屏
+    var lock = {
+    show: function(){
+    $('pageOverlay').style.visibility = 'visible';
+    var p = getPage(),
+    left = p.left,
+    top = p.top;
+    // 页面鼠标操作限制
+    this.mouse = function(evt){
+    var e = evt || window.event;
+    stopDefault(e);
+    scroll(left, top);
+    };
+    each(['DOMMouseScroll', 'mousewheel', 'scroll', 'contextmenu'], function(o, i) {
+    bind(document, o, lock.mouse);
+    });
+    // 屏蔽特定按键: F5, Ctrl + R, Ctrl + A, Tab, Up, Down
+    this.key = function(evt){
+    var e = evt || window.event,
+    key = e.keyCode;
+    if((key == 116) || (e.ctrlKey && key == 82) || (e.ctrlKey && key == 65) || (key == 9) || (key == 38) || (key == 40)) {
+    try{
+    e.keyCode = 0;
+    }catch(_){};
+    stopDefault(e);
+    };
+    };
+    bind(document, 'keydown', lock.key);
+    },
+    close: function(){
+    $('pageOverlay').style.visibility = 'hidden';
+    each(['DOMMouseScroll', 'mousewheel', 'scroll', 'contextmenu'], function(o, i) {
+    unbind(document, o, lock.mouse);
+    });
+    unbind(document, 'keydown', lock.key);
+    }
+    };
+    bind(window, 'load', function(){
+    $('mrpx').onclick = function(){
+    lock.show();
+	};
+	$('mrfl').onclick = function(){
+    lock.show();
+	};
+    $('bl_ce').onclick = function(){
+    lock.close();
+    };
+	$('xz').onclick = function(){
+    lock.close();
+    };
+	$('xz2').onclick = function(){
+    lock.close();
+    };
+	$('xz3').onclick = function(){
+    lock.close();
+    };
+	$('xz4').onclick = function(){
+    lock.close();
+    };
+	
+    });
+    })();
+	
+    </script>
+    <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){
+  $("#hb").click(function(){
+  $("#hbc").show();
+  });
+  $("#kt").click(function(){
+  $("#hbc").hide();
+  });
+});
+</script>
+</body>
+</html>

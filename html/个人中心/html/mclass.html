@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<title>我的课程</title>
+    <meta name="keywords" content="我的课程"/>
+    <meta name="description" content="我的课程"/>
+
+	<link rel="stylesheet" href="../css/style01.css">
+    <script>
+
+var phoneWidth = parseInt(window.screen.width);
+var phoneHeight = parseInt(window.screen.height);
+var phoneScale = phoneWidth/640;
+
+var ua = navigator.userAgent;
+if (/Android (\d+\.\d+)/.test(ua)){
+	var version = parseFloat(RegExp.$1);
+	// andriod 2.3
+	if(version>2.3){
+		document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+	// andriod 2.3以上
+	}else{
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+	}
+	// 其他系统
+} else {
+	document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}
+
+</script>
+<script>
+    (function(){
+    // 获取对象
+    var $ = function (id){
+    return document.getElementById(id);
+    };
+    // 遍历
+    var each = function(a, b) {
+    for (var i = 0, len = a.length; i < len; i++) b(a[i], i);
+    };
+    // 事件绑定
+    var bind = function (obj, type, fn) {
+    if (obj.attachEvent) {
+    obj['e' + type + fn] = fn;
+    obj[type + fn] = function(){obj['e' + type + fn](window.event);}
+    obj.attachEvent('on' + type, obj[type + fn]);
+    } else {
+    obj.addEventListener(type, fn, false);
+    };
+    };
+    // 移除事件
+    var unbind = function (obj, type, fn) {
+    if (obj.detachEvent) {
+    try {
+    obj.detachEvent('on' + type, obj[type + fn]);
+    obj[type + fn] = null;
+    } catch(_) {};
+    } else {
+    obj.removeEventListener(type, fn, false);
+    };
+    };
+    // 阻止浏览器默认行为
+    var stopDefault = function(e){
+    e.preventDefault ? e.preventDefault() : e.returnValue = false;
+    };
+    // 获取页面滚动条位置
+    var getPage = function(){
+    var dd = document.documentElement,
+    db = document.body;
+    return {
+    left: Math.max(dd.scrollLeft, db.scrollLeft),
+    top: Math.max(dd.scrollTop, db.scrollTop)
+    };
+    };
+    // 锁屏
+    var lock = {
+    show: function(){
+    $('pageOverlay').style.visibility = 'visible';
+    var p = getPage(),
+    left = p.left,
+    top = p.top;
+    // 页面鼠标操作限制
+    this.mouse = function(evt){
+    var e = evt || window.event;
+    stopDefault(e);
+    scroll(left, top);
+    };
+    each(['DOMMouseScroll', 'mousewheel', 'scroll', 'contextmenu'], function(o, i) {
+    bind(document, o, lock.mouse);
+    });
+    // 屏蔽特定按键: F5, Ctrl + R, Ctrl + A, Tab, Up, Down
+    this.key = function(evt){
+    var e = evt || window.event,
+    key = e.keyCode;
+    if((key == 116) || (e.ctrlKey && key == 82) || (e.ctrlKey && key == 65) || (key == 9) || (key == 38) || (key == 40)) {
+    try{
+    e.keyCode = 0;
+    }catch(_){};
+    stopDefault(e);
+    };
+    };
+    bind(document, 'keydown', lock.key);
+    },
+    close: function(){
+    $('pageOverlay').style.visibility = 'hidden';
+    each(['DOMMouseScroll', 'mousewheel', 'scroll', 'contextmenu'], function(o, i) {
+    unbind(document, o, lock.mouse);
+    });
+    unbind(document, 'keydown', lock.key);
+    }
+    };
+    bind(window, 'load', function(){
+    $('btn_lock').onclick = function(){
+    lock.show();
+    };
+    $('gban').onclick = function(){
+    lock.close();
+    };
+    });
+    })();
+    </script>
+    
+</head>
+<body>
+    <div class="wrapper">
+    <div id="pageOverlay">
+    <div class="bl_ce"></div>
+  <div id="testDiv" style="width:90%; height:360px; margin:0 auto; margin-top:40%; background:#fff;opacity:1 !important; position:relative; text-align:center; z-index:999999">
+     <Div id="gban" style="width:50PX; height:50px; background:#F30; font-size:50px; line-height:40px; text-align:center; color:#fff; position:absolute; right:20px; top:20px;">×</Div>
+     <p style="line-height:100PX; font-size:1.2em;">请选择录课方式</p>
+     <button style="background:#F30;">自动快速录课（安卓首选，录课更搞笑）</button>
+     <button style="background:#0C3;">网络直接录课（苹果首选，操作更直接）</button>
+  </div>
+</div>
+		<div class="cl_header">
+           <div class="cl_tx"> 
+              <img src="../images/tx.png">
+           </div>
+           <p class="cl_name">NAME</p>
+           <div class="cl_kj cl_he_an fr"><a href="#"><img src="../images/tu03.png" width="20">我的资料</a></div>
+           <div class="cl_zl cl_he_an fl"><a href="#"><img src="../images/tu03.png" width="20">预览空间</a></div>
+        </div>
+        <div class="cl_hytext">
+           <div class="cl_text">
+              <p>欢迎来到微商。您现在进入的是导师空间功能。在这里，您可以个性化编辑自己的专属空间并随时录制内容。完成后还能将自己的空间内容分享给更多人。有任何导师空间不懂的地方，可咨询微信ID:fvxf5887.</p>
+           </div>
+           <div class="cl_pz"><img src="../images/xj.jpg" width="20"></div>
+        </div>
+		<div class="cl_list">
+            <ul>
+              <li class="cl_lz">
+                 <div class="cl_list_an fl">
+                    <span><img src="../images/sj.jpg"></span>
+                    新增
+                 </div>
+                 <p class="fl">我要录制</p>
+                 <div class="fr cl_lz_an" id="btn_lock"><img src="../images/zj.jpg" width="50"></div>
+              </li>
+              <li class="cl_lz">
+                 <div class="cl_list_an cl_list_zj fl">
+                    <span><img src="../images/sj02.jpg"></span>
+                    演示
+                 </div>
+                 <p class="fl">导师空间案例</p>
+                 <div class="fr cl_lz_an"><img src="../images/zg.jpg" width="50"></div>
+              </li>
+            </ul>
+            <button class="cl_kjyd">空间引导示例</button>
+        </div>
+	</div>
+<div class="footer">
+  <ul>
+    <li><a href="../index.html"><img src="../images/tu01.png" width="30"><br>个人中心</a></li>
+    <li><a href="mclass.html"><img src="../images/tu02.png" width="30"><br>我的课程</a></li>
+    <li><a href="mscai.html"><img src="../images/tu03.png" width="30"><br>团队素材</a></li>
+    <li><a href="xjadmin.html"><img src="../images/tu04.png" width="30"><br>下级管理</a></li>
+  </ul>
+</div>
+</body>
+</html>

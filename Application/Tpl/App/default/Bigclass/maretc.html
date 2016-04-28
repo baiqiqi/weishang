@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<title></title>
+    <meta name="keywords" content="更多导师"/>
+    <meta name="description" content="更多导师"/>
+    <link rel="stylesheet" href="/Public/css/style.css">
+    <script type="text/javascript" src="/Public/js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="/Public/js/pageGroup.js"></script>
+    <script>
+
+var phoneWidth = parseInt(window.screen.width);
+var phoneHeight = parseInt(window.screen.height);
+var phoneScale = phoneWidth/640;
+
+var ua = navigator.userAgent;
+if (/Android (\d+\.\d+)/.test(ua)){
+	var version = parseFloat(RegExp.$1);
+	// andriod 2.3
+	if(version>2.3){
+		document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+	// andriod 2.3以上
+	}else{
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+	}
+	// 其他系统
+} else {
+	document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}
+
+</script>
+
+</head>
+<body>
+
+    <div class="wrapper02 moretc">
+    <div class="top"></div>
+      <div class="more_co">
+        <h3>更多导师</h3>
+        <div class="more_li">
+        <select>
+   <option style="width:200px">导师</option>
+   <option style="width:200px">2</option>
+   <option style="width:200px">3</option>
+   <option style="width:200px">4</option>
+   <option style="width:200px">5</option>
+  </select>
+  <input value="请输入搜索关键词...">
+  <button><img src="/Public/images/lb.png" width="15px;">搜索</button>
+  <ul>
+    <li>
+      <img class="tx" src="/Public/images/tx.png" />
+      <a href="#"><img src="/Public/images/pf.jpg">9998899</a>
+      <p>微商就做...</p>
+    </li>
+    <li>
+      <img class="tx" src="/Public/images/tx.png" />
+      <a href="#"><img src="/Public/images/pf.jpg">9998899</a>
+      <p>微商就做...</p>
+    </li>
+    <li>
+      <img class="tx" src="/Public/images/tx.png" />
+      <a href="#"><img src="/Public/images/pf.jpg">9998899</a>
+      <p>微商就做...</p>
+    </li>
+    <li>
+      <img class="tx" src="/Public/images/tx.png" />
+      <a href="#"><img src="/Public/images/pf.jpg">9998899</a>
+      <p>微商就做...</p>
+    </li>
+    <li>
+      <img class="tx" src="/Public/images/tx.png" />
+      <a href="#"><img src="/Public/images/pf.jpg">9998899</a>
+      <p>微商就做...</p>
+    </li>
+    <li>
+      <img class="tx" src="/Public/images/tx.png" />
+      <a href="#"><img src="/Public/images/pf.jpg">9998899</a>
+      <p>微商就做...</p>
+    </li>
+    <li>
+      <img class="tx" src="/Public/images/tx.png" />
+      <a href="#"><img src="/Public/images/pf.jpg">9998899</a>
+      <p>微商就做...</p>
+    </li>
+    <li>
+      <img class="tx" src="/Public/images/tx.png" />
+      <a href="#"><img src="/Public/images/pf.jpg">9998899</a>
+      <p>微商就做...</p>
+    </li>
+    <li>
+      <img class="tx" src="/Public/images/tx.png" />
+      <a href="#"><img src="/Public/images/pf.jpg">9998899</a>
+      <p>微商就做...</p>
+    </li>
+  </ul>
+  <div class="cl"></div>
+        </div>
+      </div>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<title>大讲坛</title>
+    <meta name="keywords" content="大讲坛"/>
+    <meta name="description" content="大讲坛"/>
+    <link rel="stylesheet" href="../css/style01.css">
+     <script>
+
+var phoneWidth = parseInt(window.screen.width);
+var phoneHeight = parseInt(window.screen.height);
+var phoneScale = phoneWidth/640;
+
+var ua = navigator.userAgent;
+if (/Android (\d+\.\d+)/.test(ua)){
+	var version = parseFloat(RegExp.$1);
+	// andriod 2.3
+	if(version>2.3){
+		document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+	// andriod 2.3以上
+	}else{
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+	}
+	// 其他系统
+} else {
+	document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}
+
+</script>
+
+</head>
+<body>
+	<div class="wrapper02">
+        <div class="header">
+          <p>欢迎您来到一起学堂的直播业务，本直播主要针对您所拥有的社群进行录制并同步直播服务
+        </div>
+        <div class="fenl">
+          <select>
+   <option style="width:200px">导师</option>
+   <option style="width:200px">2</option>
+   <option style="width:200px">3</option>
+   <option style="width:200px">4</option>
+   <option style="width:200px">5</option>
+  </select>
+  <textarea></textarea>
+  <textarea></textarea>
+  <textarea></textarea>
+  <div class="tix"><p>目前只接受当天直播，暂时不接受预约！</p></div>
+  <div class="tix2"><p>联系微信号：</p></div>
+   <div class="tix2"><p>播放时间：</p><input></div>
+    <div class="tix2"><p>预计群数：</p><input></div>
+        </div>
+        <a href="#" class="faq">确定直播</a>
+       
+    </div>
+
+
+</body>
+</html>

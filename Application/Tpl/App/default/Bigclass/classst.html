@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<title></title>
+    <meta name="keywords" content="课程收听"/>
+    <meta name="description" content="课程收听"/>
+    <link rel="stylesheet" href="/Public/css/style.css">
+    <script type="text/javascript" src="/Public/js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="/Public/js/pageGroup.js"></script>
+    <script>
+
+var phoneWidth = parseInt(window.screen.width);
+var phoneHeight = parseInt(window.screen.height);
+var phoneScale = phoneWidth/640;
+
+var ua = navigator.userAgent;
+if (/Android (\d+\.\d+)/.test(ua)){
+	var version = parseFloat(RegExp.$1);
+	// andriod 2.3
+	if(version>2.3){
+		document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+	// andriod 2.3以上
+	}else{
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+	}
+	// 其他系统
+} else {
+	document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}
+
+</script>
+
+</head>
+<body>
+
+    <div class="wrapper02 st_ym">
+    <div id="pageOverlay">
+    <div id="bl_ce"></div>
+  <div id="testDiv" class="testDiv2" style="width:80%;margin:0 auto; margin-top:20%;opacity:1 !important; position:relative; text-align:left; z-index:999999;border-radius:5px; padding:25px;">
+    <img src="/Public/images/gu_ts.jpg">
+    <a id="qued" href="#">确定</a>
+  </div>
+</div>
+		<div class="cl_header">
+           <div class="cl_tx"> 
+              <img src="/Public/images/tx.png">
+           </div>
+           <p class="cl_name">叶梁</p>
+           <div class="cl_kj cl_he_an fr"><a href="../index.html"><img src="/Public/images/tu03.png" width="20">返回首页</a></div>
+           <div class="cl_zl cl_he_an fl"><a href="teackj.html"><img src="/Public/images/tu03.png" width="20">导师空间</a></div>
+        </div>
+        
+       <div class="cl_co">
+         <p>金牌讲师</p>
+         微商培训：怎么加人和建群
+        <a id="mrpx" href="#">立即收听</a>
+        <div class="st_xx"><span>收听数：<strong>5503</strong></span><span>评分：<strong>5.3</strong></span></div>
+        <div class="pl_list">
+          <ul>
+            <li>
+              <p>
+                <span>2016/3/26</span><br>
+                没听到
+                <div class="fens_box">10.0分</div>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span>2016/3/26</span><br>
+                没听到
+                <div class="fens_box">10.0分</div>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span>2016/3/26</span><br>
+                没听到
+                <div class="fens_box">10.0分</div>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span>2016/3/26</span><br>
+                没听到
+                <div class="fens_box">10.0分</div>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span>2016/3/26</span><br>
+                没听到
+                <div class="fens_box">10.0分</div>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span>2016/3/26</span><br>
+                没听到
+                <div class="fens_box">10.0分</div>
+              </p>
+            </li>
+          </ul>
+          
+        </div>
+        共：69条/23页
+        <div id="pageGro" class="cb">
+	
+    <div class="pageList">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+    
+</div>
+       </div>
+		
+	</div>
+
+<script>
+    (function(){
+    // 获取对象
+    var $ = function (id){
+    return document.getElementById(id);
+    };
+    // 遍历
+    var each = function(a, b) {
+    for (var i = 0, len = a.length; i < len; i++) b(a[i], i);
+    };
+    // 事件绑定
+    var bind = function (obj, type, fn) {
+    if (obj.attachEvent) {
+    obj['e' + type + fn] = fn;
+    obj[type + fn] = function(){obj['e' + type + fn](window.event);}
+    obj.attachEvent('on' + type, obj[type + fn]);
+    } else {
+    obj.addEventListener(type, fn, false);
+    };
+    };
+    // 移除事件
+    var unbind = function (obj, type, fn) {
+    if (obj.detachEvent) {
+    try {
+    obj.detachEvent('on' + type, obj[type + fn]);
+    obj[type + fn] = null;
+    } catch(_) {};
+    } else {
+    obj.removeEventListener(type, fn, false);
+    };
+    };
+    // 阻止浏览器默认行为
+    var stopDefault = function(e){
+    e.preventDefault ? e.preventDefault() : e.returnValue = false;
+    };
+    // 获取页面滚动条位置
+    var getPage = function(){
+    var dd = document.documentElement,
+    db = document.body;
+    return {
+    left: Math.max(dd.scrollLeft, db.scrollLeft),
+    top: Math.max(dd.scrollTop, db.scrollTop)
+    };
+    };
+    // 锁屏
+    var lock = {
+    show: function(){
+    $('pageOverlay').style.visibility = 'visible';
+    var p = getPage(),
+    left = p.left,
+    top = p.top;
+    // 页面鼠标操作限制
+    this.mouse = function(evt){
+    var e = evt || window.event;
+    stopDefault(e);
+    scroll(left, top);
+    };
+    each(['DOMMouseScroll', 'mousewheel', 'scroll', 'contextmenu'], function(o, i) {
+    bind(document, o, lock.mouse);
+    });
+    // 屏蔽特定按键: F5, Ctrl + R, Ctrl + A, Tab, Up, Down
+    this.key = function(evt){
+    var e = evt || window.event,
+    key = e.keyCode;
+    if((key == 116) || (e.ctrlKey && key == 82) || (e.ctrlKey && key == 65) || (key == 9) || (key == 38) || (key == 40)) {
+    try{
+    e.keyCode = 0;
+    }catch(_){};
+    stopDefault(e);
+    };
+    };
+    bind(document, 'keydown', lock.key);
+    },
+    close: function(){
+    $('pageOverlay').style.visibility = 'hidden';
+    each(['DOMMouseScroll', 'mousewheel', 'scroll', 'contextmenu'], function(o, i) {
+    unbind(document, o, lock.mouse);
+    });
+    unbind(document, 'keydown', lock.key);
+    }
+    };
+    bind(window, 'load', function(){
+    $('mrpx').onclick = function(){
+    lock.show();
+    };
+    $('qued').onclick = function(){
+    lock.close();
+    };
+	
+    });
+    })();
+    </script>
+</body>
+</html>

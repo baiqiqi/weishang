@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<title>下级管理</title>
+    <meta name="keywords" content="下级管理"/>
+    <meta name="description" content="下级管理"/>
+    <link rel="stylesheet" href="../css/style01.css">
+    <script src="../js/jquery.1.7.2.min.js"></script>
+    <script src="../js/mobiscroll_002.js" type="text/javascript"></script>
+	<script src="../js/mobiscroll_004.js" type="text/javascript"></script>
+	<link href="../css/mobiscroll_002.css" rel="stylesheet" type="text/css">
+	<link href="../css/mobiscroll.css" rel="stylesheet" type="text/css">
+	<script src="../js/mobiscroll.js" type="text/javascript"></script>
+	<script src="../js/mobiscroll_003.js" type="text/javascript"></script>
+	<script src="../js/mobiscroll_005.js" type="text/javascript"></script>
+	<link href="../css/mobiscroll_003.css" rel="stylesheet" type="text/css">
+    <script>
+
+var phoneWidth = parseInt(window.screen.width);
+var phoneHeight = parseInt(window.screen.height);
+var phoneScale = phoneWidth/640;
+
+var ua = navigator.userAgent;
+if (/Android (\d+\.\d+)/.test(ua)){
+	var version = parseFloat(RegExp.$1);
+	// andriod 2.3
+	if(version>2.3){
+		document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+	// andriod 2.3以上
+	}else{
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+	}
+	// 其他系统
+} else {
+	document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}
+
+</script>
+
+</head>
+<body>
+<div class="wrapper">
+   <div class="xj_nav">
+      <ul>
+         <li class="xj_on"><a href="xjadmin_st.html">收听查询</a></li>
+         <li><a href="#">申请处理</a></li>
+         <li><a href="xjadmin.html">管理下级</a></li>
+         <li><a href="#">付费查询</a></li>
+      </ul>
+   </div>
+   
+   <div class="xj_co">
+     <div class="content" style="width:96%; margin:0 auto;">
+         <div class="demos" style="width:100%; margin:0 auto;">
+         <ul>
+         <li class="fl">
+			<input value="开始日期" class="" readonly="readonly" name="appDate" id="appDate" type="text" ></li>
+            <li class="fr">
+            <input value="结束日期" class="" readonly="readonly" name="appDate" id="appDate2" type="text">
+            </li>
+          </ul>
+          <div class="cl"></div>
+          <select class="st_xz">
+<option>您暂未录制课程</option> 
+ 
+</select>
+<button class="st_ss">搜索</button>
+		 </div>
+	</div>
+    <div class="tj_list" style=" margin-top:20px;">
+     <ul>
+         <li style="border:none;">头像昵称</li>
+         <li>课程数</li>
+         <li>总收听数</li>
+         <li>下级空间</li>
+         <li>操作</li>
+     </ul>
+   </div>
+    <script type="text/javascript">
+        $(function () {
+			var currYear = (new Date()).getFullYear();	
+			var opt={};
+			opt.date = {preset : 'date'};
+			opt.datetime = {preset : 'datetime'};
+			opt.time = {preset : 'time'};
+			opt.default = {
+				theme: 'android-ics light', //皮肤样式
+		        display: 'modal', //显示方式 
+		        mode: 'scroller', //日期选择模式
+				dateFormat: 'yyyy-mm-dd',
+				lang: 'zh',
+				showNow: true,
+				nowText: "今天",
+		        startYear: currYear - 10, //开始年份
+		        endYear: currYear + 10 //结束年份
+			};
+
+		  	$("#appDate").mobiscroll($.extend(opt['date'], opt['default']));
+		  	var optDateTime = $.extend(opt['datetime'], opt['default']);
+		  	var optTime = $.extend(opt['time'], opt['default']);
+		    $("#appDateTime").mobiscroll(optDateTime).datetime(optDateTime);
+		    $("#appTime2").mobiscroll(optTime).time(optTime);
+			$("#appDate2").mobiscroll($.extend(opt['date'], opt['default']));
+		  	var optDateTime = $.extend(opt['datetime'], opt['default']);
+		  	var optTime = $.extend(opt['time'], opt['default']);
+		    $("#appDateTime").mobiscroll(optDateTime).datetime(optDateTime);
+		    $("#appTime").mobiscroll(optTime).time(optTime);
+        });
+    </script>
+   </div>	 
+</div>
+
+<div class="footer">
+  <ul>
+    <li><a href="../index.html"><img src="../images/tu01.png" width="30"><br>个人中心</a></li>
+    <li><a href="mclass.html"><img src="../images/tu02.png" width="30"><br>我的课程</a></li>
+    <li><a href="mscai.html"><img src="../images/tu03.png" width="30"><br>团队素材</a></li>
+    <li><a href="xjadmin.html"><img src="../images/tu04.png" width="30"><br>下级管理</a></li>
+  </ul>
+</div>
+
+</body>
+</html>

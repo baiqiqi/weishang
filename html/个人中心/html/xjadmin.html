@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<title>下级管理</title>
+    <meta name="keywords" content="下级管理"/>
+    <meta name="description" content="下级管理"/>
+
+	<link rel="stylesheet" href="../css/style01.css">
+    <script>
+
+var phoneWidth = parseInt(window.screen.width);
+var phoneHeight = parseInt(window.screen.height);
+var phoneScale = phoneWidth/640;
+
+var ua = navigator.userAgent;
+if (/Android (\d+\.\d+)/.test(ua)){
+	var version = parseFloat(RegExp.$1);
+	// andriod 2.3
+	if(version>2.3){
+		document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+	// andriod 2.3以上
+	}else{
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+	}
+	// 其他系统
+} else {
+	document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}
+
+</script>
+
+</head>
+<body>
+<div class="wrapper">
+   <div class="xj_nav">
+      <ul>
+         <li><a href="xjadmin_st.html">收听查询</a></li>
+         <li><a href="#">申请处理</a></li>
+         <li class="xj_on"><a href="xjadmin">管理下级</a></li>
+         <li><a href="#">付费查询</a></li>
+      </ul>
+   </div>
+   <div class="tj_list">
+     <ul style=" font-size:1.2em">
+         <li style="border:none;">头像昵称</li>
+         <li>课程数</li>
+         <li>总收听数</li>
+         <li>下级空间</li>
+         <li>操作</li>
+     </ul>
+   </div>
+   <div class="xj_co">
+      <img src="../images/wxts.png"><br>
+      您还没有下级，加油去寻找下级吧！
+   </div>	 
+</div>
+
+<div class="footer">
+  <ul>
+    <li><a href="../index.html"><img src="../images/tu01.png" width="30"><br>个人中心</a></li>
+    <li><a href="mclass.html"><img src="../images/tu02.png" width="30"><br>我的课程</a></li>
+    <li><a href="mscai.html"><img src="../images/tu03.png" width="30"><br>团队素材</a></li>
+    <li><a href="xjadmin.html"><img src="../images/tu04.png" width="30"><br>下级管理</a></li>
+  </ul>
+</div>
+
+</body>
+</html>

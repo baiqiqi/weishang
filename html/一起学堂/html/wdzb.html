@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<title>大讲坛</title>
+    <meta name="keywords" content="大讲坛"/>
+    <meta name="description" content="大讲坛"/>
+    <link rel="stylesheet" href="../css/style01.css">
+     <script>
+
+var phoneWidth = parseInt(window.screen.width);
+var phoneHeight = parseInt(window.screen.height);
+var phoneScale = phoneWidth/640;
+
+var ua = navigator.userAgent;
+if (/Android (\d+\.\d+)/.test(ua)){
+	var version = parseFloat(RegExp.$1);
+	// andriod 2.3
+	if(version>2.3){
+		document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+	// andriod 2.3以上
+	}else{
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+	}
+	// 其他系统
+} else {
+	document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}
+
+</script>
+
+</head>
+<body>
+	<div class="wrapper02">
+       <div class="sousuo">
+       <input><button>搜索</button>
+       </div>
+       <div class="zb_list">
+         <span class="zbsj"><strong>我的直播</strong><br>
+         直播时间：2016-03-31 22:90
+         </span>
+         <span class="wr">未确定，<br>
+         等待付款
+         </span>
+         <img src="../images/jt.png">
+       </div>
+    </div>
+
+
+</body>
+</html>

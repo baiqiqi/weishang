@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<title>大讲坛</title>
+    <meta name="keywords" content="大讲坛"/>
+    <meta name="description" content="大讲坛"/>
+    <link rel="stylesheet" href="/Public/css/style02.css">
+     <script>
+
+var phoneWidth = parseInt(window.screen.width);
+var phoneHeight = parseInt(window.screen.height);
+var phoneScale = phoneWidth/640;
+
+var ua = navigator.userAgent;
+if (/Android (\d+\.\d+)/.test(ua)){
+	var version = parseFloat(RegExp.$1);
+	// andriod 2.3
+	if(version>2.3){
+		document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+	// andriod 2.3以上
+	}else{
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+	}
+	// 其他系统
+} else {
+	document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}
+
+</script>
+
+</head>
+<body>
+	<div class="wrapper02">
+        <div class="header">
+          <p>欢迎您来到一起学堂的直播业务，本直播主要针对您所拥有的社群进行录制并同步直播服务
+        </div>
+        <div class="fenl">
+          <ul>
+             <li>
+               <span class="gss">2-5个群</span><span class="jg">单群30元</span>
+             </li>
+             <li>
+               <span class="gss">6-20个群</span><span class="jg">单群25元</span>
+             </li>
+             <li>
+               <span class="gss">21-50个群</span><span class="jg">单群20元</span>
+             </li>
+             <li>
+               <span class="gss">51-100个群</span><span class="jg">单群15元</span>
+             </li>
+             <li>
+               <span class="gss">101个群以上</span><span class="jg">单群10元</span>
+             </li>
+          </ul>
+        </div>
+        <a href="#" class="faq"> 发起直播</a>
+        <div class="shum">
+          <p>1:请内容制作者严格尊重各项国家法律法规，如在内容播放中，发现有违法违规等内容，我们将立即终止直播服务，并不会退相关费用</p>
+          <p class="bp">2:请内容制作者严格尊重各项国家法律法规，如在内容播放中，发现有违法违规等内容，我们将立即终止直播服务，并不会退相关费用<br>
+             3:请内容制作者严格尊重各项国家法律法规，如在内容播放中，发现有违法违规等内容，我们将立即终止直播服务，并不会退相关费用
+           <div class="weix"><img src="/Public/images/wx.png"></div>
+          </p>
+         
+        </div>
+    </div>
+
+
+</body>
+</html>

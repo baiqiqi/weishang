@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<title>团队素材</title>
+    <meta name="keywords" content="团队素材"/>
+    <meta name="description" content="团队素材"/>
+
+	<link rel="stylesheet" href="/Public/css/style01.css">
+    <script>
+
+var phoneWidth = parseInt(window.screen.width);
+var phoneHeight = parseInt(window.screen.height);
+var phoneScale = phoneWidth/640;
+
+var ua = navigator.userAgent;
+if (/Android (\d+\.\d+)/.test(ua)){
+	var version = parseFloat(RegExp.$1);
+	// andriod 2.3
+	if(version>2.3){
+		document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+	// andriod 2.3以上
+	}else{
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+	}
+	// 其他系统
+} else {
+	document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}
+
+</script>
+
+</head>
+<body>
+<div class="wrapper">
+	 <div class="class_date_nav">
+       <ul>
+         <li style="width:40%; border:none;">课程名/时间</li>
+         <li style="width:30%">导师</li>
+         <li style="width:28%">状态</li>
+       </ul>
+     </div>	
+     <div class="class_date_list">
+       <ul>
+         <li style="width:39%; text-align:left; padding-left:5px;">中国防水匠施工训练营<br>2016-03-11 22:10:55</li>
+         <li style="width:30%; line-height:40px;">中国防水匠施工训练营</li>
+         <li style="width:28%">继续<br>0%</li>
+       </ul>
+       <ul class="class_date_list_2">
+         <li style="width:39%; text-align:left; padding-left:5px;">中国防水匠施工训练营<br>2016-03-11 22:10:55</li>
+         <li style="width:30%; line-height:40px;">中国防水匠施工训练营</li>
+         <li style="width:28%">继续<br>0%</li>
+       </ul>
+     </div>	
+</div>
+
+<div class="footer">
+  <ul>
+    <li><a href="../index.html"><img src="/Public/images/tu01.png" width="30"><br>个人中心</a></li>
+    <li><a href="mclass.html"><img src="/Public/images/tu02.png" width="30"><br>我的课程</a></li>
+    <li><a href="mscai.html"><img src="/Public/images/tu03.png" width="30"><br>团队素材</a></li>
+    <li><a href="xjadmin.html"><img src="/Public/images/tu04.png" width="30"><br>下级管理</a></li>
+  </ul>
+</div>
+
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+<script>
+	$(document).ready(function ()
+		{
+			
+			var $li = $('#tab li');
+			var $ul = $('#content ul');
+						
+			$li.click(function(){
+				var $this = $(this);
+				var $t = $this.index();
+				$li.removeClass();
+				$this.addClass('current');
+				$ul.css('display','none');
+				$ul.eq($t).css('display','block');
+		});
+	});
+	
+</script>
+</body>
+</html>

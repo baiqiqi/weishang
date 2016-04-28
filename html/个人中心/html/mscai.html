@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<title>团队素材</title>
+    <meta name="keywords" content="团队素材"/>
+    <meta name="description" content="团队素材"/>
+
+	<link rel="stylesheet" href="../css/style01.css">
+    <script>
+
+var phoneWidth = parseInt(window.screen.width);
+var phoneHeight = parseInt(window.screen.height);
+var phoneScale = phoneWidth/640;
+
+var ua = navigator.userAgent;
+if (/Android (\d+\.\d+)/.test(ua)){
+	var version = parseFloat(RegExp.$1);
+	// andriod 2.3
+	if(version>2.3){
+		document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+	// andriod 2.3以上
+	}else{
+		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+	}
+	// 其他系统
+} else {
+	document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+}
+
+</script>
+
+</head>
+<body>
+	<div class="wrapper">
+		 <div id="outer">
+    <ul id="tab">
+        <li class="current"><img src="../images/su01.png" width="20">我的素材</li>
+        <li><img src="../images/sc02.png" width="20">下级素材</li>
+        <li style="width:34%"><img src="../images/sc03.png" width="20">我的标签</li>
+    </ul>
+    <div id="content">
+        <ul style="display:block;">
+           <h1>今天</h1>
+           <p class="mc_list">
+             <a href="#" class="mc_tx"><img src="../images/jtu.png">点击添加素材</a>
+           </p>
+        </ul>
+        <ul>
+            <p class="ms_text"><img src="../images/kl.png">
+              抱歉，您还没有下级，赶快去邀请您的下级代理加入吧！
+            </p>
+        </ul>
+        <ul>
+           <p class="ms_text"><img src="../images/sc04.png">
+              标签将展示在这里，赶紧对您的素材进行便签分类，更方便管理您的素材库。
+            </p>
+        </ul>
+    </div>
+   </div>
+</div>
+
+<div class="footer">
+  <ul>
+    <li><a href="../index.html"><img src="../images/tu01.png" width="30"><br>个人中心</a></li>
+    <li><a href="mclass.html"><img src="../images/tu02.png" width="30"><br>我的课程</a></li>
+    <li><a href="mscai.html"><img src="../images/tu03.png" width="30"><br>团队素材</a></li>
+    <li><a href="xjadmin.html"><img src="../images/tu04.png" width="30"><br>下级管理</a></li>
+  </ul>
+</div>
+
+<script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+<script>
+	$(document).ready(function ()
+		{
+			
+			var $li = $('#tab li');
+			var $ul = $('#content ul');
+						
+			$li.click(function(){
+				var $this = $(this);
+				var $t = $this.index();
+				$li.removeClass();
+				$this.addClass('current');
+				$ul.css('display','none');
+				$ul.eq($t).css('display','block');
+		});
+	});
+	
+</script>
+</body>
+</html>
