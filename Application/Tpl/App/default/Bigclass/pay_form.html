@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="./public/common/css/reset.css"/>
+    <link rel="stylesheet" href="./public/common/css/common.css"/>
+    <link rel="stylesheet" href="./public/css/index4.css"/>
+    <link rel="stylesheet" href="./public/css/style01.css">
+    <style>
+      .fenl{
+        display:none;
+      }
+    </style>
+</head>
+<body>
+<section class="section2">
+    <p>课程收听费用</p>
+</section>
+<section class="section1">
+    <dl class="clearfix">
+        <dt><img src="./public/img/phone_03.jpg" alt=""/></dt>
+        <dd>
+            <p>课程名：微商培训：怎么加入和建群</p>
+            <p>单价：￥0.00课&nbsp; &nbsp;讲师：叶梁</p>
+            <p>简介：金牌讲师</p>
+        </dd>
+    </dl>
+</section>
+<section class="seciton5">
+     <div class="clearfix shop">
+          <p class="fl">购买直播群数：</p>
+          <div class="clearfix fl">
+
+              <img src="./public/img/2_03.jpg" width="20" height="50" class="count min"/>
+              <input id="text_box" class="text_box" type="text" placeholder="1" value="1" class="fl" name="" />
+              <img src="./public/img/2_05.jpg" width="20" height="50" class="count add"/>
+
+          </div>
+     </div>
+    <div class="clearfix shop shop2">
+        <p class="fl">微信号：</p>
+        <div class="clearfix fl">
+            <input type="text" placeholder="请填写您的微信号，方便我们与您联系" class="fl"/>
+        </div>
+    </div>
+</section>
+<section class="seciton3">
+    <div class="clearfix">
+     <p>课程技术服务费</p><span id="total2">1*30.00=￥30.00</span>
+    </div>
+    <div class="clearfix">
+     <p>导师收取课程费</p><span id="total3">1*0.00=￥0.00</span>
+    </div>
+    <div class="clearfix">
+     共计：<span id="total1">30.00元</span>
+     </div>
+</section>
+
+<section class="clearfix seciton4">
+        <p>技术服务费</p><span id='fen3'>展开</span>
+</section>
+
+        <div class="fenl">
+          <ul>
+             <li>
+               <span class="gss">2-5个群</span><span class="jg">单群30元</span>
+             </li>
+             <li>
+               <span class="gss">6-20个群</span><span class="jg">单群25元</span>
+             </li>
+             <li>
+               <span class="gss">21-50个群</span><span class="jg">单群20元</span>
+             </li>
+             <li>
+               <span class="gss">51-100个群</span><span class="jg">单群15元</span>
+             </li>
+             <li>
+               <span class="gss">101个群以上</span><span class="jg">单群10元</span>
+             </li>
+          </ul>
+        </div>
+
+<button class="click_btn">确认收听</button>
+<button class="cancle_btn">联系客服</button>
+
+</body>
+</html>
+
+<script src="./public/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+  $(function(){
+    $('#fen3').click(function(){
+        $('.fenl').toggle('slow');
+        $(this).text(($(this).text()=='收起')?'展开':'收起')
+    })
+  })
+</script>
+<script> 
+    $(function(){
+      var total1 = $('#total1')
+      var total2 = $('#total2')
+      var total3 = $('#total3')
+      $(".count").parent().find('input[class*=text_box]').val(1); 
+      $(".count").click(function(){
+        var t=$(this).parent().find('input[class*=text_box]'); 
+        var is_add = $(this).hasClass('add')
+        if(isNaN(t.val())){
+            t.val(0); 
+        }
+        if(is_add){
+          t.val(parseInt(t.val())+1)
+        }else{
+          t.val(parseInt(t.val())-1) 
+          if(parseInt(t.val())<1){ 
+            t.val(1); 
+          } 
+        }
+        var val = t.val(); //购买直播群数
+
+        if(val <= 5){
+          var price = 30
+        }else if(val >= 6 && val <= 20 ){
+          var price = 25
+        }else if(val >= 21 && val <= 50){
+          var price = 20
+        }else if(val >= 51 && val <= 100){
+          var price = 15
+        }else{
+          var price = 10
+        }
+        var money_sun = (val*price).toFixed(2);
+        total1.text(money_sun+'元')
+        total2.text(val+'*'+price.toFixed(2)+'=￥'+money_sun)  
+        total3.text(val+'*0.00=￥0.00')          
+     
+     })
+
+
+
+    }) 
+
+</script> 

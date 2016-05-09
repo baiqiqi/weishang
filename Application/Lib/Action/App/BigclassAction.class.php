@@ -34,6 +34,11 @@ class BigclassAction extends Action {
 		$info = R ( "Api/Api/gettheme" );
 		C ( "DEFAULT_THEME", $info ["theme"] );
 		$this->display();	
+	}
+	function pay_form(){
+	$info = R ( "Api/Api/gettheme" );
+	C ( "DEFAULT_THEME", $info ["theme"] );
+	$this->display();
 	}	
 
 }

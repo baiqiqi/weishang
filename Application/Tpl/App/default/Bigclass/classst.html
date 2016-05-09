@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no" />
-	<title></title>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <title></title>
     <meta name="keywords" content="课程收听"/>
     <meta name="description" content="课程收听"/>
     <link rel="stylesheet" href="/Public/css/style.css">
@@ -17,17 +17,17 @@ var phoneScale = phoneWidth/640;
 
 var ua = navigator.userAgent;
 if (/Android (\d+\.\d+)/.test(ua)){
-	var version = parseFloat(RegExp.$1);
-	// andriod 2.3
-	if(version>2.3){
-		document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
-	// andriod 2.3以上
-	}else{
-		document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
-	}
-	// 其他系统
+    var version = parseFloat(RegExp.$1);
+    // andriod 2.3
+    if(version>2.3){
+        document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+    // andriod 2.3以上
+    }else{
+        document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+    }
+    // 其他系统
 } else {
-	document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+    document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
 }
 
 </script>
@@ -43,7 +43,7 @@ if (/Android (\d+\.\d+)/.test(ua)){
     <a id="qued" href="#">确定</a>
   </div>
 </div>
-		<div class="cl_header">
+        <div class="cl_header">
            <div class="cl_tx"> 
               <img src="/Public/images/tx.png">
            </div>
@@ -56,6 +56,7 @@ if (/Android (\d+\.\d+)/.test(ua)){
          <p>金牌讲师</p>
          微商培训：怎么加人和建群
         <a id="mrpx" href="#">立即收听</a>
+        <a id="mrpx" href="#">群内播课</a>
         <div class="st_xx"><span>收听数：<strong>5503</strong></span><span>评分：<strong>5.3</strong></span></div>
         <div class="pl_list">
           <ul>
@@ -106,7 +107,7 @@ if (/Android (\d+\.\d+)/.test(ua)){
         </div>
         共：69条/23页
         <div id="pageGro" class="cb">
-	
+    
     <div class="pageList">
         <ul>
             <li>1</li>
@@ -119,8 +120,8 @@ if (/Android (\d+\.\d+)/.test(ua)){
     
 </div>
        </div>
-		
-	</div>
+        
+    </div>
 
 <script>
     (function(){
@@ -210,7 +211,7 @@ if (/Android (\d+\.\d+)/.test(ua)){
     $('qued').onclick = function(){
     lock.close();
     };
-	
+    
     });
     })();
     </script>

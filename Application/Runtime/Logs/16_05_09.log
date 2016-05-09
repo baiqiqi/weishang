@@ -125,3 +125,409 @@ INFO: [ view_end ] --START--
 INFO: ShowPageTrace Behavior ::run [ RunTime:0.000562s ]
 INFO: [ view_end ] --END-- [ RunTime:0.000595s ]
 
+[ 2016-05-09T09:22:34+08:00 ] 127.0.0.1 /
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\chongci\weixin\weishang\Public\Conf\config.php 第 16 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+NOTIC: [8] Undefined index: debug D:\chongci\weixin\weishang\Application\Lib\Action\App\IndexAction.class.php 第 5 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Core\Db.class.php 第 1207 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\chongci\weixin\weishang\Core\Lib\Driver\Db\DbMysql.class.php 第 109 行.
+SQL: SELECT * FROM `wemall_wxconfig` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.008948s ]
+NOTIC: [8] Undefined index: uid D:\chongci\weixin\weishang\Application\Lib\Action\App\IndexAction.class.php 第 59 行.
+
+[ 2016-05-09T09:22:34+08:00 ] 127.0.0.1 /index.php?g=App&m=Member&a=login
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\chongci\weixin\weishang\Public\Conf\config.php 第 16 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.001319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001363s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000434s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000428s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000385s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001884s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000571s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000604s ]
+
+[ 2016-05-09T09:22:42+08:00 ] 127.0.0.1 /index.php?g=App&m=Member&a=login
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\chongci\weixin\weishang\Public\Conf\config.php 第 16 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\chongci\weixin\weishang\Core\Lib\Driver\Db\DbMysql.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `wemall_user` [ RunTime:0.013306s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Core\Db.class.php 第 1207 行.
+SQL: SELECT * FROM `wemall_user` WHERE ( `login` = 'zsm' ) LIMIT 1   [ RunTime:0.010210s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 545 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 335 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 393 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 273 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.068849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068905s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000348s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000303s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000351s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001505s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000447s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2016-05-09T09:22:45+08:00 ] 127.0.0.1 /index.php?g=App&m=Index&a=member&uid=22
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\chongci\weixin\weishang\Public\Conf\config.php 第 16 行.
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000510s ]
+NOTIC: [8] Undefined index: debug D:\chongci\weixin\weishang\Application\Lib\Action\App\IndexAction.class.php 第 5 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Core\Db.class.php 第 1207 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\chongci\weixin\weishang\Core\Lib\Driver\Db\DbMysql.class.php 第 109 行.
+SQL: SELECT * FROM `wemall_wxconfig` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.025201s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Core\Db.class.php 第 1207 行.
+SQL: SELECT * FROM `wemall_user` WHERE ( `uid` = '22' ) LIMIT 1   [ RunTime:0.015521s ]
+SQL: SHOW COLUMNS FROM `wemall_order_level` [ RunTime:0.011103s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Core\Db.class.php 第 1207 行.
+SQL: SELECT * FROM `wemall_order_level` WHERE ( `level_id` = 22 ) AND ( `status` = 2 ) AND ( `active_time` <= '2016-05-09 09:22:44' )  [ RunTime:0.019197s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\chongci\weixin\weishang\Application\Lib\Action\App\IndexAction.class.php 第 94 行.
+SQL: SHOW COLUMNS FROM `wemall_info` [ RunTime:0.025804s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Core\Db.class.php 第 1207 行.
+SQL: SELECT * FROM `wemall_info` LIMIT 1   [ RunTime:0.024091s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Core\Db.class.php 第 1207 行.
+SQL: SELECT * FROM `wemall_user` WHERE ( `uid` = '22' ) LIMIT 1   [ RunTime:0.030967s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Core\Db.class.php 第 1207 行.
+SQL: SELECT SUM(price) AS tp_sum FROM `wemall_order_level` WHERE ( `status` = 0 ) AND ( `level_id` = 22 ) LIMIT 1   [ RunTime:0.025003s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Core\Db.class.php 第 1207 行.
+SQL: SELECT SUM(price) AS tp_sum FROM `wemall_order_level` WHERE ( `status` = 1 ) AND ( `level_id` = 22 ) LIMIT 1   [ RunTime:0.028778s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Core\Db.class.php 第 1207 行.
+SQL: SELECT SUM(price) AS tp_sum FROM `wemall_order_level` WHERE ( `status` = 2 ) AND ( `level_id` = 22 ) LIMIT 1   [ RunTime:0.032952s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Core\Db.class.php 第 1207 行.
+SQL: SELECT SUM(price) AS tp_sum FROM `wemall_order_level` WHERE ( `status` = 3 ) AND ( `level_id` = 22 ) LIMIT 1   [ RunTime:0.032876s ]
+SQL: SHOW COLUMNS FROM `wemall_tx_record` [ RunTime:0.046608s ]
+ERR: 1146:Table 'dajiangtang.wemall_tx_record' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `wemall_tx_record`
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Core\Db.class.php 第 1207 行.
+SQL: SELECT SUM(price) AS tp_sum FROM `wemall_tx_record` WHERE ( `status` = 0 ) AND ( `uid` = '22' ) LIMIT 1   [ RunTime:0.037934s ]
+ERR: 1146:Table 'dajiangtang.wemall_tx_record' doesn't exist
+ [ SQL语句 ] : SELECT SUM(price) AS tp_sum FROM `wemall_tx_record` WHERE ( `status` = 0 ) AND ( `uid` = '22' ) LIMIT 1  
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Core\Db.class.php 第 1207 行.
+SQL: SELECT SUM(price) AS tp_sum FROM `wemall_tx_record` WHERE ( `status` = 1 ) AND ( `uid` = '22' ) LIMIT 1   [ RunTime:0.035729s ]
+ERR: 1146:Table 'dajiangtang.wemall_tx_record' doesn't exist
+ [ SQL语句 ] : SELECT SUM(price) AS tp_sum FROM `wemall_tx_record` WHERE ( `status` = 1 ) AND ( `uid` = '22' ) LIMIT 1  
+NOTIC: [8] Use of undefined constant confirm_price - assumed 'confirm_price' D:\chongci\weixin\weishang\Application\Lib\Action\App\IndexAction.class.php 第 441 行.
+NOTIC: [8] Use of undefined constant add_over_price - assumed 'add_over_price' D:\chongci\weixin\weishang\Application\Lib\Action\App\IndexAction.class.php 第 441 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Core\Db.class.php 第 1207 行.
+SQL: SELECT * FROM `wemall_tx_record` WHERE ( `uid` = '22' )  [ RunTime:0.042044s ]
+ERR: 1146:Table 'dajiangtang.wemall_tx_record' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `wemall_tx_record` WHERE ( `uid` = '22' ) 
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Core\Db.class.php 第 1207 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wemall_order_level` WHERE ( `level_id` = 22 ) LIMIT 1   [ RunTime:0.024533s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Core\Db.class.php 第 1207 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wemall_order_level` WHERE ( `status` = 0 ) AND ( `level_id` = 22 ) LIMIT 1   [ RunTime:0.025167s ]
+SQL: SELECT sum(`totalprice`) as total FROM `wemall_order_level` inner join `wemall_order` on `wemall_order_level`.`order_id` =  `wemall_order`.`orderid` where `level_id`=22 [ RunTime:0.022314s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Core\Db.class.php 第 1207 行.
+SQL: SELECT * FROM `wemall_user` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.015402s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 545 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 335 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 545 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 335 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 393 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 797 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 807 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 393 行.
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead D:\chongci\weixin\weishang\Core\Lib\Template\ThinkTemplate.class.php 第 273 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.045935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045996s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000573s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000367s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000306s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001768s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000751s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000803s ]
+
